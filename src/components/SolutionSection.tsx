@@ -1,6 +1,7 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { KitchenUtensilsIcon, CheckmarkCircle02Icon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { CheckCircle2, Utensils } from 'lucide-react';
 
 export const SolutionSection: React.FC = () => {
   const { solution } = landingData;
@@ -31,7 +32,7 @@ export const SolutionSection: React.FC = () => {
             {/* Small Floating Card */}
             <div className="absolute -top-6 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-[#234D35]/10 hidden sm:flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-[#E7B94A]/20 flex items-center justify-center text-[#234D35]">
-                <Utensils className="w-5 h-5" />
+                <HugeiconsIcon icon={KitchenUtensilsIcon} className="w-5 h-5" />
               </div>
               <div className="text-left">
                 <span className="block text-xs font-bold text-[#234D35]">Receitas Práticas</span>
@@ -58,9 +59,8 @@ export const SolutionSection: React.FC = () => {
             <p className="text-base sm:text-lg text-[#20251F]/85 leading-relaxed">
               {solution.description}
             </p>
-
             <div className="bg-white p-5 rounded-xl border border-[#234D35]/10 shadow-sm flex items-start gap-3.5">
-              <CheckCircle2 className="w-5 h-5 text-[#234D35] shrink-0 mt-0.5" />
+              <HugeiconsIcon icon={CheckmarkCircle02Icon} className="w-5 h-5 text-[#234D35] shrink-0 mt-0.5" />
               <p className="text-sm font-medium text-[#234D35] leading-snug">
                 {solution.highlight}
               </p>

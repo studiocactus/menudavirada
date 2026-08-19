@@ -1,5 +1,6 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowRight01Icon, Download01Icon, StarIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
-import { Download, Star, ArrowRight } from 'lucide-react';
 import { handleCheckoutClick } from '../lib/tracking';
 import { landingData } from '../data/landingData';
 
@@ -40,14 +41,14 @@ export const Hero: React.FC = () => {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#234D35] text-[#F8F5ED] font-sans font-bold text-base md:text-lg hover:bg-[#5F7547] transition-all shadow-lg hover:shadow-xl active:scale-98 cursor-pointer group"
                 >
                   <span>Quero meu Menu da Virada</span>
-                  <ArrowRight className="w-5 h-5 text-[#E7B94A] group-hover:translate-x-1 transition-transform" />
+                  <HugeiconsIcon icon={ArrowRight01Icon} className="w-5 h-5 text-[#E7B94A] group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
 
               {/* Trust Small Text */}
               <div className="flex items-center gap-3 text-xs text-[#20251F]/85 pt-1">
                 <span className="inline-flex items-center gap-1 shrink-0">
-                  <Download className="w-4 h-4 text-[#234D35]" />
+                  <HugeiconsIcon icon={Download01Icon} className="w-4 h-4 text-[#234D35]" />
                   Acesso digital imediato
                 </span>
                 <span className="hidden sm:inline">•</span>
@@ -65,7 +66,7 @@ export const Hero: React.FC = () => {
               <div className="text-xs text-[#20251F]/85">
                 <div className="flex items-center gap-1 text-[#E7B94A]">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-[#E7B94A]" />
+                    <HugeiconsIcon icon={StarIcon} key={i} className="w-3.5 h-3.5 fill-[#E7B94A]" />
                   ))}
                 </div>
                 <span className="font-semibold text-[#234D35]">"Comida com cara de casa, sem complicação."</span>

@@ -1,15 +1,16 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Clock01Icon, Coffee01Icon, SparklesIcon, HeartIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { Clock, Sparkles, Heart, Coffee } from 'lucide-react';
 
 export const BenefitsSection: React.FC = () => {
   const { benefits } = landingData;
 
   const icons = [
-    <Clock className="w-6 h-6 text-[#E7B94A]" />,
-    <Sparkles className="w-6 h-6 text-[#E7B94A]" />,
-    <Heart className="w-6 h-6 text-[#E7B94A]" />,
-    <Coffee className="w-6 h-6 text-[#E7B94A]" />
+    <HugeiconsIcon icon={Clock01Icon} className="w-6 h-6 text-[#E7B94A]" />,
+    <HugeiconsIcon icon={SparklesIcon} className="w-6 h-6 text-[#E7B94A]" />,
+    <HugeiconsIcon icon={HeartIcon} className="w-6 h-6 text-[#E7B94A]" />,
+    <HugeiconsIcon icon={Coffee01Icon} className="w-6 h-6 text-[#E7B94A]" />
   ];
 
   return (

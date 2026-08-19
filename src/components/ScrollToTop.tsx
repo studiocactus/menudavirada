@@ -1,6 +1,6 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowUp01Icon } from "@hugeicons/core-free-icons";
 import React, { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
-
 export const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,7 +33,7 @@ export const ScrollToTop: React.FC = () => {
       className="fixed z-40 right-6 bottom-8 max-md:bottom-24 w-12 h-12 rounded-xl bg-[#234D35] text-[#F8F5ED] border border-[#E7B94A]/30 shadow-lg hover:bg-[#5F7547] active:scale-95 transition-all flex items-center justify-center cursor-pointer group"
       aria-label="Voltar ao topo"
     >
-      <ArrowUp className="w-5 h-5 text-[#E7B94A] group-hover:-translate-y-1 transition-transform" />
+      <HugeiconsIcon icon={ArrowUp01Icon} className="w-5 h-5 text-[#E7B94A] group-hover:-translate-y-1 transition-transform" />
     </button>
   );
 };

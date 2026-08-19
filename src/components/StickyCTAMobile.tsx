@@ -1,7 +1,7 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import React, { useState, useEffect } from 'react';
 import { handleCheckoutClick } from '../lib/tracking';
-import { ArrowRight } from 'lucide-react';
-
 export const StickyCTAMobile: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -62,7 +62,7 @@ export const StickyCTAMobile: React.FC = () => {
           className="flex-1 py-3 px-5 rounded-xl bg-[#234D35] text-[#F8F5ED] font-sans font-bold text-xs uppercase tracking-wider hover:bg-[#5F7547] active:scale-95 transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
         >
           <span>Quero meu Menu</span>
-          <ArrowRight className="w-4 h-4 text-[#E7B94A]" />
+          <HugeiconsIcon icon={ArrowRight01Icon} className="w-4 h-4 text-[#E7B94A]" />
         </button>
       </div>
     </div>

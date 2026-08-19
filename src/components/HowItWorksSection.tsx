@@ -1,14 +1,14 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { BookOpen01Icon, KitchenUtensilsIcon, ShoppingBag01Icon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { BookOpen, ShoppingBag, Utensils } from 'lucide-react';
-
 export const HowItWorksSection: React.FC = () => {
   const { howItWorks } = landingData;
 
   const icons = [
-    <BookOpen className="w-6 h-6 text-[#234D35]" />,
-    <ShoppingBag className="w-6 h-6 text-[#234D35]" />,
-    <Utensils className="w-6 h-6 text-[#234D35]" />
+    <HugeiconsIcon icon={BookOpen01Icon} className="w-6 h-6 text-[#234D35]" />,
+    <HugeiconsIcon icon={ShoppingBag01Icon} className="w-6 h-6 text-[#234D35]" />,
+    <HugeiconsIcon icon={KitchenUtensilsIcon} className="w-6 h-6 text-[#234D35]" />
   ];
 
   return (

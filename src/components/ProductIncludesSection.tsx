@@ -1,7 +1,7 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { BookOpen01Icon, SparklesIcon, Tick01Icon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { BookOpen, Check, Sparkles } from 'lucide-react';
-
 export const ProductIncludesSection: React.FC = () => {
   const { productIncludes } = landingData;
 
@@ -30,7 +30,7 @@ export const ProductIncludesSection: React.FC = () => {
 
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E7B94A] text-[#234D35] text-xs font-bold uppercase tracking-wider">
-                <BookOpen className="w-4 h-4" />
+                <HugeiconsIcon icon={BookOpen01Icon} className="w-4 h-4" />
                 <span>PRODUTO PRINCIPAL</span>
               </div>
 
@@ -47,7 +47,7 @@ export const ProductIncludesSection: React.FC = () => {
                 {productIncludes.mainProduct.items.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 text-sm text-[#F8F5ED]/90">
                     <div className="w-5 h-5 rounded-full bg-[#E7B94A]/20 flex items-center justify-center text-[#E7B94A] shrink-0 mt-0.5">
-                      <Check className="w-3.5 h-3.5" />
+                      <HugeiconsIcon icon={Tick01Icon} className="w-3.5 h-3.5" />
                     </div>
                     <span>{item}</span>
                   </li>
@@ -65,7 +65,7 @@ export const ProductIncludesSection: React.FC = () => {
           <div className="lg:col-span-6 space-y-4 flex flex-col justify-between">
             <div className="text-left pb-2">
               <h4 className="font-serif font-bold text-xl text-[#234D35] flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-[#5F7547]" />
+                <HugeiconsIcon icon={SparklesIcon} className="w-5 h-5 text-[#5F7547]" />
                 Bônus Exclusivos Inclusos
               </h4>
               <p className="text-xs text-[#20251F]/85">

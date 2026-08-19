@@ -1,7 +1,7 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowDown01Icon } from "@hugeicons/core-free-icons";
 import React, { useState } from 'react';
 import { landingData } from '../data/landingData';
-import { ChevronDown } from 'lucide-react';
-
 export const FAQSection: React.FC = () => {
   const { faq } = landingData;
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -42,11 +42,9 @@ export const FAQSection: React.FC = () => {
                   aria-expanded={isOpen}
                 >
                   <span>{item.question}</span>
-                  <ChevronDown
-                    className={`w-5 h-5 text-[#234D35] shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'transform rotate-180 text-[#5F7547]' : ''
-                    }`}
-                  />
+                  <HugeiconsIcon icon={ArrowDown01Icon} className={`w-5 h-5 text-[#234D35] shrink-0 transition-transform duration-300 ${
+                                              isOpen ? 'transform rotate-180 text-[#5F7547]' : ''
+                                            }`} />
                 </button>
 
                 {isOpen && (

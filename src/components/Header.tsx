@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
           <img 
             src="/logo.svg" 
             alt="Menu da Virada" 
-            className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105 drop-shadow-sm" 
+            className="h-[57px] md:h-[68px] w-auto transition-transform group-hover:scale-105 drop-shadow-sm" 
           />
         </a>
 

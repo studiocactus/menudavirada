@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
               <img 
                 src="/logo.svg" 
                 alt="Menu da Virada" 
-                className="h-10 md:h-12 w-auto brightness-0 invert opacity-90" 
+                className="h-[53px] md:h-[62px] w-auto brightness-0 invert opacity-90" 
               />
             </div>
             <p className="text-xs text-[#F8F5ED]/70 italic">

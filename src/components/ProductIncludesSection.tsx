@@ -12,7 +12,7 @@ export const ProductIncludesSection: React.FC = () => {
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
-            <span>05 — O QUE VOCÊ RECEBE</span>
+            <span>06 — O QUE VOCÊ RECEBE</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             O que você recebe ao adquirir o Menu da Virada

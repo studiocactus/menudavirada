@@ -18,7 +18,7 @@ export const HowItWorksSection: React.FC = () => {
         {/* Header */}
         <div className="space-y-4 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
-            <span>07 — COMO FUNCIONA</span>
+            <span>03 — COMO FUNCIONA</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Como funciona na sua rotina

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Utensils } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { handleCheckoutClick } from '../lib/tracking';
 
 export const Header: React.FC = () => {
@@ -35,18 +35,12 @@ export const Header: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#" className="flex items-center gap-2 group focus:outline-none">
-          <div className="w-9 h-9 rounded-full bg-[#234D35] flex items-center justify-center text-[#E7B94A] transition-transform group-hover:scale-105">
-            <Utensils className="w-4 h-4" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif font-bold text-lg md:text-xl tracking-tight text-[#234D35] leading-none">
-              MENU DA VIRADA
-            </span>
-            <span className="text-[10px] tracking-widest text-[#5F7547] uppercase font-sans font-semibold mt-0.5">
-              40+ Receitas Práticas
-            </span>
-          </div>
+        <a href="#" className="flex items-center group focus:outline-none">
+          <img 
+            src="/logo.svg" 
+            alt="Menu da Virada" 
+            className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105 drop-shadow-sm" 
+          />
         </a>
 
         {/* Desktop Navigation Links */}

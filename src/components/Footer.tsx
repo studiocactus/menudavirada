@@ -1,6 +1,6 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
-import { Utensils } from 'lucide-react';
+
 
 export const Footer: React.FC = () => {
   return (
@@ -10,14 +10,13 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-[#F8F5ED]/10 text-center md:text-left">
           
           {/* Brand */}
-          <div className="space-y-2">
-            <div className="flex items-center justify-center md:justify-start gap-2">
-              <div className="w-8 h-8 rounded-full bg-[#E7B94A] text-[#234D35] flex items-center justify-center font-bold">
-                <Utensils className="w-4 h-4" />
-              </div>
-              <span className="font-serif font-bold text-xl tracking-tight text-[#F8F5ED]">
-                MENU DA VIRADA
-              </span>
+          <div className="space-y-4">
+            <div className="flex justify-center md:justify-start">
+              <img 
+                src="/logo.svg" 
+                alt="Menu da Virada" 
+                className="h-10 md:h-12 w-auto brightness-0 invert opacity-90" 
+              />
             </div>
             <p className="text-xs text-[#F8F5ED]/70 italic">
               "Comida gostosa de verdade para a vida real."

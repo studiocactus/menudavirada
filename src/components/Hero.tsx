@@ -1,7 +1,6 @@
 import React from 'react';
-import { ShieldCheck, Download, Star, ArrowRight } from 'lucide-react';
+import { Download, Star, ArrowRight } from 'lucide-react';
 import { handleCheckoutClick } from '../lib/tracking';
-import { siteConfig } from '../config/siteConfig';
 import { landingData } from '../data/landingData';
 
 export const Hero: React.FC = () => {
@@ -20,7 +19,7 @@ export const Hero: React.FC = () => {
             {/* Editorial Line Identifier */}
             <div className="flex items-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
               <span className="w-8 h-[1px] bg-[#5F7547]"></span>
-              <span>MENU DA VIRADA — APRESENTAÇÃO</span>
+              <span>PARA QUEM QUER COMER BEM NA VIDA REAL</span>
             </div>
 
             {/* Main Headline */}
@@ -30,7 +29,7 @@ export const Hero: React.FC = () => {
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-[#20251F]/85 leading-relaxed max-w-xl">
-              40 receitas simples, rápidas e saborosas para facilitar sua rotina depois dos 40 — sem passar horas na cozinha.
+              O Menu da Virada reúne 40 receitas simples, rápidas e saborosas para você resolver o almoço ou jantar sem passar horas na cozinha.
             </p>
 
             {/* CTA Button Block */}
@@ -40,30 +39,19 @@ export const Hero: React.FC = () => {
                   onClick={() => handleCheckoutClick('Hero CTA Button')}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#234D35] text-[#F8F5ED] font-sans font-bold text-base md:text-lg hover:bg-[#5F7547] transition-all shadow-lg hover:shadow-xl active:scale-98 cursor-pointer group"
                 >
-                  <span>Quero facilitar minhas refeições</span>
+                  <span>Quero meu Menu da Virada</span>
                   <ArrowRight className="w-5 h-5 text-[#E7B94A] group-hover:translate-x-1 transition-transform" />
                 </button>
-                <div className="text-left shrink-0">
-                  <span className="block text-xs font-bold text-[#5F7547] uppercase tracking-wider">
-                    VALOR DE LANÇAMENTO
-                  </span>
-                  <span className="block text-sm font-serif font-bold text-[#234D35]">
-                    Por apenas {siteConfig.PRICE}
-                  </span>
-                </div>
               </div>
 
               {/* Trust Small Text */}
               <div className="flex items-center gap-3 text-xs text-[#20251F]/85 pt-1">
-                <span className="inline-flex items-center gap-1">
-                  <ShieldCheck className="w-4 h-4 text-[#234D35]" />
-                  Pagamento seguro
-                </span>
-                <span>•</span>
-                <span className="inline-flex items-center gap-1">
+                <span className="inline-flex items-center gap-1 shrink-0">
                   <Download className="w-4 h-4 text-[#234D35]" />
                   Acesso digital imediato
                 </span>
+                <span className="hidden sm:inline">•</span>
+                <span className="text-left">Leia pelo celular, tablet ou computador</span>
               </div>
             </div>
 

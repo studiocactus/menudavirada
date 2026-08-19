@@ -21,7 +21,7 @@ export const InsideBookSection: React.FC = () => {
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
-            <span>03 — O CONTEÚDO</span>
+            <span>04 — O CONTEÚDO</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             40 receitas para você nunca mais ficar sem ideia.

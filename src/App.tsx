@@ -24,16 +24,16 @@ export function App() {
       <main>
         <Hero />
         <IdentificationSection />
-        <SolutionSection />
         <BenefitsSection />
+        <SolutionSection />
+        <HowItWorksSection />
+        <AuthorSection />
         <InsideBookSection />
         <FeaturedRecipesSection />
         <ProductIncludesSection />
         <TargetAudienceSection />
-        <HowItWorksSection />
         <OfferSection />
         <GuaranteeSection />
-        <AuthorSection />
         <FAQSection />
         <FinalCTASection />
       </main>

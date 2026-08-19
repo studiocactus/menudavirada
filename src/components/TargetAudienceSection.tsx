@@ -12,7 +12,7 @@ export const TargetAudienceSection: React.FC = () => {
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
-            <span>06 — PARA QUEM É</span>
+            <span>07 — PARA QUEM É</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Feito para quem quer comer bem sem complicar.

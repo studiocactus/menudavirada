@@ -11,13 +11,13 @@ export const TargetAudienceSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#5F7547]">
-            PARA QUEM É O MENU DA VIRADA
-          </span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>06 — PARA QUEM É</span>
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Feito para quem quer comer bem sem complicar.
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Se você se identifica com uma ou mais das situações abaixo, o livro foi feito sob medida para a sua rotina.
           </p>
         </div>
@@ -36,7 +36,7 @@ export const TargetAudienceSection: React.FC = () => {
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#234D35]">
                   {item.title}
                 </h3>
-                <p className="text-sm text-[#20251F]/75 leading-relaxed">
+                <p className="text-sm text-[#20251F]/85 leading-relaxed">
                   {item.description}
                 </p>
               </div>

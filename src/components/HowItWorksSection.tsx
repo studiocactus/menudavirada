@@ -17,13 +17,13 @@ export const HowItWorksSection: React.FC = () => {
         
         {/* Header */}
         <div className="space-y-4 max-w-2xl mx-auto">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#5F7547]">
-            PASSO A PASSO SIMPLES
-          </span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>07 — COMO FUNCIONA</span>
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Como funciona na sua rotina
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Apenas 3 passos simples para transformar qualquer jantar cansativo em um momento gostoso.
           </p>
         </div>
@@ -40,7 +40,7 @@ export const HowItWorksSection: React.FC = () => {
                   <div className="w-12 h-12 rounded-xl bg-[#F8F5ED] border border-[#234D35]/10 flex items-center justify-center">
                     {icons[idx]}
                   </div>
-                  <span className="font-serif font-bold text-3xl text-[#E7B94A]">
+                  <span className="font-serif font-bold text-3xl text-[#C99A2C]">
                     {step.step}
                   </span>
                 </div>
@@ -49,7 +49,7 @@ export const HowItWorksSection: React.FC = () => {
                   {step.title}
                 </h3>
 
-                <p className="text-sm text-[#20251F]/75 leading-relaxed">
+                <p className="text-sm text-[#20251F]/85 leading-relaxed">
                   {step.description}
                 </p>
               </div>

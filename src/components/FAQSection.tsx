@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { landingData } from '../data/landingData';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 export const FAQSection: React.FC = () => {
   const { faq } = landingData;
@@ -16,14 +16,13 @@ export const FAQSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#234D35]/10 text-[#234D35] text-xs font-bold uppercase tracking-wider">
-            <HelpCircle className="w-3.5 h-3.5 text-[#E7B94A]" />
-            <span>PERGUNTAS FREQUENTES</span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>08 — FAQ</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Dúvidas Frequentes
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Respostas claras e diretas para tudo o que você precisa saber sobre o Menu da Virada.
           </p>
         </div>
@@ -45,13 +44,13 @@ export const FAQSection: React.FC = () => {
                   <span>{item.question}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-[#234D35] shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'transform rotate-180 text-[#E7B94A]' : ''
+                      isOpen ? 'transform rotate-180 text-[#5F7547]' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-0 text-sm sm:text-base text-[#20251F]/80 leading-relaxed border-t border-[#234D35]/5 animate-in fade-in duration-200">
+                  <div className="px-6 pb-6 pt-0 text-sm sm:text-base text-[#20251F]/85 leading-relaxed border-t border-[#234D35]/5 animate-in fade-in duration-200">
                     <p className="pt-4">{item.answer}</p>
                   </div>
                 )}

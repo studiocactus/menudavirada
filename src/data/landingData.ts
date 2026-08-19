@@ -310,5 +310,21 @@ export const landingData = {
       question: "E se eu não gostar do material?",
       answer: "Você conta com nossa Garantia Incondicional de 7 dias. Se por qualquer motivo não ficar satisfeito, basta solicitar o reembolso na plataforma e devolveremos 100% do seu dinheiro."
     }
-  ] as FAQItem[]
+  ] as FAQItem[],
+
+  // Assets configuráveis do projeto
+  assets: {
+    bookMockupBgImage: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&auto=format&fit=crop&q=80",
+    bookMockupRealImage: "", // Deixar em branco para usar o mockup CSS atual
+  },
+
+  // Estrutura futura de Autor / Curador (Opcional)
+  author: {
+    title: "Por trás do Menu da Virada",
+    subtitle: "A mente e o coração por trás das panelas",
+    name: "[AUTOR / CURADOR A DEFINIR]",
+    bio: "Aqui será inserido o perfil e a história do criador do e-book. Falaremos sobre sua paixão por descomplicar a cozinha diária e como as 40 receitas foram selecionadas e testadas.",
+    image: "", // URL da foto do autor
+  }
 };
+

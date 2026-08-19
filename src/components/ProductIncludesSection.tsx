@@ -1,6 +1,6 @@
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { BookOpen, Gift, Check, Sparkles } from 'lucide-react';
+import { BookOpen, Check, Sparkles } from 'lucide-react';
 
 export const ProductIncludesSection: React.FC = () => {
   const { productIncludes } = landingData;
@@ -11,14 +11,13 @@ export const ProductIncludesSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#234D35]/10 text-[#234D35] text-xs font-bold uppercase tracking-wider">
-            <Gift className="w-3.5 h-3.5 text-[#E7B94A]" />
-            <span>PACOTE COMPLETO</span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>05 — O QUE VOCÊ RECEBE</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             O que você recebe ao adquirir o Menu da Virada
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Tudo o que você precisa para simplificar o seu jantar em um só lugar.
           </p>
         </div>
@@ -66,10 +65,10 @@ export const ProductIncludesSection: React.FC = () => {
           <div className="lg:col-span-6 space-y-4 flex flex-col justify-between">
             <div className="text-left pb-2">
               <h4 className="font-serif font-bold text-xl text-[#234D35] flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-[#E7B94A]" />
+                <Sparkles className="w-5 h-5 text-[#5F7547]" />
                 Bônus Exclusivos Inclusos
               </h4>
-              <p className="text-xs text-[#20251F]/70">
+              <p className="text-xs text-[#20251F]/85">
                 Você recebe esses 3 materiais complementares sem nenhum custo adicional.
               </p>
             </div>
@@ -92,7 +91,7 @@ export const ProductIncludesSection: React.FC = () => {
                   {bonus.title}
                 </h5>
 
-                <p className="text-xs sm:text-sm text-[#20251F]/75 leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#20251F]/85 leading-relaxed">
                   {bonus.description}
                 </p>
               </div>

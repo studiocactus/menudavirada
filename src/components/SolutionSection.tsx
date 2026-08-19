@@ -1,6 +1,6 @@
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { CheckCircle2, HeartHandshake, Utensils } from 'lucide-react';
+import { CheckCircle2, Utensils } from 'lucide-react';
 
 export const SolutionSection: React.FC = () => {
   const { solution } = landingData;
@@ -35,16 +35,16 @@ export const SolutionSection: React.FC = () => {
               </div>
               <div className="text-left">
                 <span className="block text-xs font-bold text-[#234D35]">Receitas Práticas</span>
-                <span className="block text-[11px] text-[#20251F]/70">Sem frescura & Sem complicação</span>
+                <span className="block text-[11px] text-[#20251F]/85">Sem frescura & Sem complicação</span>
               </div>
             </div>
           </div>
 
           {/* Text & Content */}
           <div className="lg:col-span-6 space-y-6 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#234D35]/10 text-[#234D35] text-xs font-bold uppercase tracking-wider">
-              <HeartHandshake className="w-3.5 h-3.5 text-[#E7B94A]" />
-              <span>A NOSSA PROPOSTA</span>
+            <div className="flex items-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+              <span className="w-8 h-[1px] bg-[#5F7547]"></span>
+              <span>02 — A SOLUÇÃO</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight leading-tight">
@@ -55,7 +55,7 @@ export const SolutionSection: React.FC = () => {
               "{solution.quote}"
             </blockquote>
 
-            <p className="text-base sm:text-lg text-[#20251F]/80 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#20251F]/85 leading-relaxed">
               {solution.description}
             </p>
 

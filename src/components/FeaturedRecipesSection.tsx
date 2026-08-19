@@ -11,13 +11,13 @@ export const FeaturedRecipesSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#5F7547]">
-            DESTAQUES DO CARDÁPIO
-          </span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>04 — RECEITAS EM DESTAQUE</span>
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             Algumas das delícias que esperam por você
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Pratos apetitosos, sem complicação e que deixam a noite mais leve e saborosa.
           </p>
         </div>
@@ -34,7 +34,7 @@ export const FeaturedRecipesSection: React.FC = () => {
                 <img
                   src={recipe.image}
                   alt={recipe.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
@@ -50,20 +50,20 @@ export const FeaturedRecipesSection: React.FC = () => {
                   <h3 className="font-serif font-bold text-xl text-[#234D35] group-hover:text-[#5F7547] transition-colors leading-snug">
                     {recipe.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#20251F]/75 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#20251F]/85 leading-relaxed">
                     {recipe.description}
                   </p>
                 </div>
 
                 {/* Prep info & Tags */}
                 <div className="space-y-3 pt-3 border-t border-[#234D35]/10">
-                  <div className="flex items-center justify-between text-xs text-[#20251F]/70 font-medium">
+                  <div className="flex items-center justify-between text-xs text-[#20251F]/85 font-medium">
                     <span className="inline-flex items-center gap-1.5">
-                      <Clock className="w-4 h-4 text-[#E7B94A]" />
+                      <Clock className="w-4 h-4 text-[#5F7547]" />
                       {recipe.prepTime}
                     </span>
                     <span className="inline-flex items-center gap-1.5">
-                      <Users className="w-4 h-4 text-[#E7B94A]" />
+                      <Users className="w-4 h-4 text-[#5F7547]" />
                       {recipe.servings}
                     </span>
                   </div>

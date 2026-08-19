@@ -21,4 +21,8 @@ export const siteConfig = {
   // Contato e Direitos
   CONTACT_EMAIL: "contato@menudavirada.com.br",
   COPYRIGHT_YEAR: new Date().getFullYear(),
+
+  // Recursos Opcionais / Futuros
+  SHOW_AUTHOR_SECTION: false,
 };
+

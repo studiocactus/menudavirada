@@ -18,13 +18,13 @@ export const IdentificationSection: React.FC = () => {
         
         {/* Header */}
         <div className="space-y-4 max-w-2xl mx-auto">
-          <span className="text-xs uppercase font-bold tracking-widest text-[#5F7547]">
-            IDENTIFICAÇÃO COM A SUA ROTINA
-          </span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>01 — O PROBLEMA</span>
+          </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             {identification.title}
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             {identification.subtitle}
           </p>
         </div>
@@ -43,7 +43,7 @@ export const IdentificationSection: React.FC = () => {
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#234D35]">
                   "{item.quote}"
                 </h3>
-                <p className="text-sm text-[#20251F]/75 leading-relaxed">
+                <p className="text-sm text-[#20251F]/85 leading-relaxed">
                   {item.description}
                 </p>
               </div>

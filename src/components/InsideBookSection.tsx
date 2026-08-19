@@ -1,6 +1,6 @@
 import React from 'react';
 import { landingData } from '../data/landingData';
-import { Sun, Utensils, Moon, Zap, Sparkles, Heart, BookOpen } from 'lucide-react';
+import { Sun, Utensils, Moon, Zap, Sparkles, Heart } from 'lucide-react';
 
 export const InsideBookSection: React.FC = () => {
   const { categories } = landingData;
@@ -20,14 +20,13 @@ export const InsideBookSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#234D35]/10 text-[#234D35] text-xs font-bold uppercase tracking-wider">
-            <BookOpen className="w-3.5 h-3.5 text-[#E7B94A]" />
-            <span>ESTRUTURA DO EBOOK</span>
+          <div className="flex items-center justify-center gap-3 text-[#5F7547] text-xs font-bold uppercase tracking-widest">
+            <span>03 — O CONTEÚDO</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#234D35] tracking-tight">
             40 receitas para você nunca mais ficar sem ideia.
           </h2>
-          <p className="text-base sm:text-lg text-[#20251F]/70">
+          <p className="text-base sm:text-lg text-[#20251F]/85">
             Divididas de forma lógica e prática em 6 seções para qualquer momento da sua semana.
           </p>
         </div>
@@ -44,7 +43,7 @@ export const InsideBookSection: React.FC = () => {
                   <div className="p-3 rounded-xl bg-[#F8F5ED] border border-[#234D35]/10">
                     {iconMap[cat.iconName]}
                   </div>
-                  <span className="px-3 py-1 rounded-full bg-[#E7B94A]/20 text-[#234D35] font-sans text-xs font-bold uppercase tracking-wider">
+                  <span className="px-3 py-1 rounded-full bg-[#234D35] text-[#F8F5ED] font-sans text-[10px] font-bold uppercase tracking-wider">
                     {cat.count}
                   </span>
                 </div>
@@ -53,7 +52,7 @@ export const InsideBookSection: React.FC = () => {
                   {cat.title}
                 </h3>
 
-                <p className="text-sm text-[#20251F]/75 leading-relaxed">
+                <p className="text-sm text-[#20251F]/85 leading-relaxed">
                   {cat.description}
                 </p>
               </div>

@@ -10,9 +10,11 @@ import { TargetAudienceSection } from './components/TargetAudienceSection';
 import { HowItWorksSection } from './components/HowItWorksSection';
 import { OfferSection } from './components/OfferSection';
 import { GuaranteeSection } from './components/GuaranteeSection';
+import { AuthorSection } from './components/AuthorSection';
 import { FAQSection } from './components/FAQSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
+import { StickyCTAMobile } from './components/StickyCTAMobile';
 
 export function App() {
   return (
@@ -30,10 +32,12 @@ export function App() {
         <HowItWorksSection />
         <OfferSection />
         <GuaranteeSection />
+        <AuthorSection />
         <FAQSection />
         <FinalCTASection />
       </main>
       <Footer />
+      <StickyCTAMobile />
     </div>
   );
 }

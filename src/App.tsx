@@ -15,6 +15,7 @@ import { FAQSection } from './components/FAQSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
 import { StickyCTAMobile } from './components/StickyCTAMobile';
+import { ScrollToTop } from './components/ScrollToTop';
 
 export function App() {
   return (
@@ -38,6 +39,7 @@ export function App() {
       </main>
       <Footer />
       <StickyCTAMobile />
+      <ScrollToTop />
     </div>
   );
 }

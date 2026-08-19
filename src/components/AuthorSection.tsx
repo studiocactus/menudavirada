@@ -1,8 +1,8 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { UserCheck01Icon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { landingData } from '../data/landingData';
+import { UserCheck } from 'lucide-react';
+
 export const AuthorSection: React.FC = () => {
   if (!siteConfig.SHOW_AUTHOR_SECTION) return null;
 
@@ -24,7 +24,7 @@ export const AuthorSection: React.FC = () => {
               // Placeholder elegante e minimalista
               <div className="w-full max-w-xs aspect-[4/5] rounded-3xl bg-[#F3EFE4] border-2 border-dashed border-[#234D35]/20 flex flex-col items-center justify-center p-6 text-center shadow-inner">
                 <div className="w-16 h-16 rounded-full bg-[#234D35]/5 flex items-center justify-center text-[#234D35]/40 mb-4">
-                  <HugeiconsIcon icon={UserCheck01Icon} className="w-8 h-8" />
+                  <UserCheck className="w-8 h-8" />
                 </div>
                 <span className="text-xs uppercase font-bold tracking-wider text-[#5F7547]">
                   [FOTO DO AUTOR A DEFINIR]

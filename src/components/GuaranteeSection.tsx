@@ -1,7 +1,6 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { RotateLeft01Icon, BadgeCheckIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { ShieldCheck, RotateCcw } from 'lucide-react';
 
 export const GuaranteeSection: React.FC = () => {
   return (
@@ -12,13 +11,13 @@ export const GuaranteeSection: React.FC = () => {
           
           {/* Shield Icon Badge */}
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-[#F8F5ED] border-2 border-[#234D35]/20 flex items-center justify-center text-[#234D35] shrink-0 shadow-inner">
-            <HugeiconsIcon icon={BadgeCheckIcon} className="w-10 h-10 sm:w-12 sm:h-12 text-[#234D35]" />
+            <ShieldCheck className="w-10 h-10 sm:w-12 sm:h-12 text-[#234D35]" />
           </div>
 
           {/* Guarantee Content */}
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#234D35]/10 text-[#234D35] text-xs font-bold uppercase tracking-wider">
-              <HugeiconsIcon icon={RotateLeft01Icon} className="w-3.5 h-3.5 text-[#E7B94A]" />
+              <RotateCcw className="w-3.5 h-3.5 text-[#E7B94A]" />
               <span>COMPRA 100% SEGURA</span>
             </div>
 

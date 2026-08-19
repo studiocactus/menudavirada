@@ -1,18 +1,17 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { KitchenUtensilsIcon, MoonIcon, SparklesIcon, Sun01Icon, ZapIcon, HeartIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
+import { Sun, Utensils, Moon, Zap, Sparkles, Heart } from 'lucide-react';
 
 export const InsideBookSection: React.FC = () => {
   const { categories } = landingData;
 
   const iconMap: Record<string, React.ReactNode> = {
-    Sun: <HugeiconsIcon icon={Sun01Icon} className="w-5 h-5 text-[#234D35]" />,
-    Utensils: <HugeiconsIcon icon={KitchenUtensilsIcon} className="w-5 h-5 text-[#234D35]" />,
-    Moon: <HugeiconsIcon icon={MoonIcon} className="w-5 h-5 text-[#234D35]" />,
-    Zap: <HugeiconsIcon icon={ZapIcon} className="w-5 h-5 text-[#234D35]" />,
-    Sparkles: <HugeiconsIcon icon={SparklesIcon} className="w-5 h-5 text-[#234D35]" />,
-    Heart: <HugeiconsIcon icon={HeartIcon} className="w-5 h-5 text-[#234D35]" />
+    Sun: <Sun className="w-5 h-5 text-[#234D35]" />,
+    Utensils: <Utensils className="w-5 h-5 text-[#234D35]" />,
+    Moon: <Moon className="w-5 h-5 text-[#234D35]" />,
+    Zap: <Zap className="w-5 h-5 text-[#234D35]" />,
+    Sparkles: <Sparkles className="w-5 h-5 text-[#234D35]" />,
+    Heart: <Heart className="w-5 h-5 text-[#234D35]" />
   };
 
   return (

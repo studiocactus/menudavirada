@@ -1,7 +1,7 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Clock01Icon, UserGroupIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
+import { Clock, Users } from 'lucide-react';
+
 export const FeaturedRecipesSection: React.FC = () => {
   const { featuredRecipes } = landingData;
 
@@ -59,11 +59,11 @@ export const FeaturedRecipesSection: React.FC = () => {
                 <div className="space-y-3 pt-3 border-t border-[#234D35]/10">
                   <div className="flex items-center justify-between text-xs text-[#20251F]/85 font-medium">
                     <span className="inline-flex items-center gap-1.5">
-                      <HugeiconsIcon icon={Clock01Icon} className="w-4 h-4 text-[#5F7547]" />
+                      <Clock className="w-4 h-4 text-[#5F7547]" />
                       {recipe.prepTime}
                     </span>
                     <span className="inline-flex items-center gap-1.5">
-                      <HugeiconsIcon icon={UserGroupIcon} className="w-4 h-4 text-[#5F7547]" />
+                      <Users className="w-4 h-4 text-[#5F7547]" />
                       {recipe.servings}
                     </span>
                   </div>

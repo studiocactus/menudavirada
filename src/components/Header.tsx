@@ -1,6 +1,5 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Cancel01Icon, Menu01Icon } from "@hugeicons/core-free-icons";
 import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 import { handleCheckoutClick } from '../lib/tracking';
 
 export const Header: React.FC = () => {
@@ -73,7 +72,7 @@ export const Header: React.FC = () => {
           className="md:hidden p-2 rounded-lg text-[#234D35] hover:bg-[#234D35]/10 focus:outline-none"
           aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
-          {mobileMenuOpen ? <HugeiconsIcon icon={Cancel01Icon} className="w-6 h-6" /> : <HugeiconsIcon icon={Menu01Icon} className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 

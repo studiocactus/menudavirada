@@ -1,15 +1,15 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { AlertCircleIcon, Clock01Icon, HelpCircleIcon, SpoonAndForkIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { landingData } from '../data/landingData';
+import { Clock, HelpCircle, UtensilsCrossed, AlertCircle } from 'lucide-react';
+
 export const IdentificationSection: React.FC = () => {
   const { identification } = landingData;
 
   const icons = [
-    <HugeiconsIcon icon={Clock01Icon} className="w-5 h-5 text-[#234D35]" />,
-    <HugeiconsIcon icon={HelpCircleIcon} className="w-5 h-5 text-[#234D35]" />,
-    <HugeiconsIcon icon={SpoonAndForkIcon} className="w-5 h-5 text-[#234D35]" />,
-    <HugeiconsIcon icon={AlertCircleIcon} className="w-5 h-5 text-[#234D35]" />
+    <Clock className="w-5 h-5 text-[#234D35]" />,
+    <HelpCircle className="w-5 h-5 text-[#234D35]" />,
+    <UtensilsCrossed className="w-5 h-5 text-[#234D35]" />,
+    <AlertCircle className="w-5 h-5 text-[#234D35]" />
   ];
 
   return (

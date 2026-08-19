@@ -1,8 +1,7 @@
-import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowRight01Icon, Award01Icon, LockIcon, SmartPhone01Icon, Tick01Icon, BadgeCheckIcon } from "@hugeicons/core-free-icons";
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { handleCheckoutClick } from '../lib/tracking';
+import { ShieldCheck, Check, ArrowRight, Lock, Smartphone, Award } from 'lucide-react';
 
 export const OfferSection: React.FC = () => {
   return (
@@ -45,30 +44,30 @@ export const OfferSection: React.FC = () => {
               <ul className="space-y-3 text-sm text-[#20251F]/80">
                 <li className="flex items-center gap-2.5 font-medium">
                   <div className="w-5 h-5 rounded-full bg-[#234D35] text-[#E7B94A] flex items-center justify-center shrink-0">
-                    <HugeiconsIcon icon={Tick01Icon} className="w-3.5 h-3.5" />
+                    <Check className="w-3.5 h-3.5" />
                   </div>
                   <span><strong>Ebook Completo:</strong> 40+ Menu da Virada (PDF)</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#234D35] text-[#E7B94A] flex items-center justify-center shrink-0">
-                    <HugeiconsIcon icon={Tick01Icon} className="w-3.5 h-3.5" />
+                    <Check className="w-3.5 h-3.5" />
                   </div>
                   <span><strong>Bônus 1:</strong> Cardápio Sugerido de 7 Dias</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#234D35] text-[#E7B94A] flex items-center justify-center shrink-0">
-                    <HugeiconsIcon icon={Tick01Icon} className="w-3.5 h-3.5" />
+                    <Check className="w-3.5 h-3.5" />
                   </div>
                   <span><strong>Bônus 2:</strong> Lista de Compras Inteligente</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#234D35] text-[#E7B94A] flex items-center justify-center shrink-0">
-                    <HugeiconsIcon icon={Tick01Icon} className="w-3.5 h-3.5" />
+                    <Check className="w-3.5 h-3.5" />
                   </div>
                   <span><strong>Bônus 3:</strong> Guia 10 Receitas Express em 15min</span>
                 </li>
                 <li className="flex items-center gap-2.5 text-xs text-[#5F7547] font-semibold pt-1">
-                  <HugeiconsIcon icon={SmartPhone01Icon} className="w-4 h-4 text-[#234D35]" />
+                  <Smartphone className="w-4 h-4 text-[#234D35]" />
                   <span>Leitura perfeita em Celular, Tablet e Computador</span>
                 </li>
               </ul>
@@ -109,21 +108,21 @@ export const OfferSection: React.FC = () => {
               className="w-full py-4 sm:py-5 px-8 rounded-xl bg-[#234D35] text-[#F8F5ED] font-sans font-bold text-lg sm:text-xl uppercase tracking-wider hover:bg-[#5F7547] transition-all shadow-xl hover:shadow-2xl active:scale-98 cursor-pointer flex items-center justify-center gap-3 group"
             >
               <span>Quero meu Menu da Virada</span>
-              <HugeiconsIcon icon={ArrowRight01Icon} className="w-6 h-6 text-[#E7B94A] group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-6 h-6 text-[#E7B94A] group-hover:translate-x-1 transition-transform" />
             </button>
 
             {/* Security Footer */}
             <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-[#20251F]/70 pt-2 border-t border-[#234D35]/10">
               <span className="inline-flex items-center gap-1.5 font-medium">
-                <HugeiconsIcon icon={LockIcon} className="w-4 h-4 text-[#234D35]" />
+                <Lock className="w-4 h-4 text-[#234D35]" />
                 Checkout Seguro Hotmart
               </span>
               <span className="inline-flex items-center gap-1.5 font-medium">
-                <HugeiconsIcon icon={BadgeCheckIcon} className="w-4 h-4 text-[#234D35]" />
+                <ShieldCheck className="w-4 h-4 text-[#234D35]" />
                 Garantia de 7 Dias
               </span>
               <span className="inline-flex items-center gap-1.5 font-medium">
-                <HugeiconsIcon icon={Award01Icon} className="w-4 h-4 text-[#234D35]" />
+                <Award className="w-4 h-4 text-[#234D35]" />
                 Download Imediato
               </span>
             </div>

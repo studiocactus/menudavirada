@@ -7,7 +7,7 @@ export const SolutionSection: React.FC = () => {
 
   return (
     <section className="py-20 md:py-28 bg-[#F3EFE4] relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           

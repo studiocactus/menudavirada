@@ -10,7 +10,7 @@ export const AuthorSection: React.FC = () => {
 
   return (
     <section className="py-20 md:py-28 bg-[#F8F5ED] border-t border-[#234D35]/10">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           

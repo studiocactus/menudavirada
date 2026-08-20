@@ -17,7 +17,7 @@ export const BenefitsSection: React.FC = () => {
       {/* Decorative Texture background */}
       <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#F8F5ED_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">

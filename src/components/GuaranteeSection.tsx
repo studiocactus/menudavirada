@@ -5,7 +5,7 @@ import { ShieldCheck, RotateCcw } from 'lucide-react';
 export const GuaranteeSection: React.FC = () => {
   return (
     <section className="py-16 md:py-24 bg-[#F8F5ED]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="bg-white p-8 sm:p-12 rounded-3xl border border-[#234D35]/15 shadow-md flex flex-col md:flex-row items-center gap-8 text-left">
           

@@ -7,7 +7,7 @@ export const TargetAudienceSection: React.FC = () => {
 
   return (
     <section className="py-20 md:py-28 bg-[#F3EFE4] border-y border-[#234D35]/10">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
@@ -23,7 +23,7 @@ export const TargetAudienceSection: React.FC = () => {
         </div>
 
         {/* Audience Cards */}
-        <div className="space-y-4 max-w-4xl mx-auto">
+        <div className="space-y-4 max-w-5xl mx-auto">
           {audience.map((item, idx) => (
             <div
               key={idx}

@@ -10,7 +10,7 @@ export const OfferSection: React.FC = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#E7B94A]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#5F7547]/20 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-12">
         
         {/* Header */}
         <div className="space-y-4 max-w-2xl mx-auto">

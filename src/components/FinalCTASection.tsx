@@ -5,7 +5,7 @@ import { ArrowRight, Utensils } from 'lucide-react';
 export const FinalCTASection: React.FC = () => {
   return (
     <section className="py-20 md:py-28 bg-[#F8F5ED] border-t border-[#234D35]/10 text-center">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         <div className="w-16 h-16 rounded-2xl bg-[#234D35] text-[#E7B94A] flex items-center justify-center mx-auto shadow-md">
           <Utensils className="w-8 h-8" />

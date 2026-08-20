@@ -13,7 +13,7 @@ export const HowItWorksSection: React.FC = () => {
 
   return (
     <section className="py-20 md:py-28 bg-[#F8F5ED]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         
         {/* Header */}
         <div className="space-y-4 max-w-2xl mx-auto">

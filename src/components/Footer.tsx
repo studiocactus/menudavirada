@@ -5,7 +5,7 @@ import { siteConfig } from '../config/siteConfig';
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#20251F] text-[#F8F5ED] py-14 border-t border-[#F8F5ED]/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-[#F8F5ED]/10 text-center md:text-left">
           

@@ -7,7 +7,7 @@ export const FeaturedRecipesSection: React.FC = () => {
 
   return (
     <section id="receitas" className="py-20 md:py-28 bg-[#F3EFE4] border-y border-[#234D35]/10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">

@@ -16,10 +16,12 @@ import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
 import { StickyCTAMobile } from './components/StickyCTAMobile';
 import { ScrollToTop } from './components/ScrollToTop';
+import { MotionEffects } from './components/MotionEffects';
 
 export function App() {
   return (
     <div className="min-h-screen bg-[#F8F5ED] text-[#20251F] font-sans antialiased overflow-x-hidden">
+      <MotionEffects />
       <Header />
       <main>
         <Hero />

@@ -49,11 +49,18 @@ export const FAQSection: React.FC = () => {
                   />
                 </button>
 
-                {isOpen && (
-                  <div className="px-6 pb-6 pt-0 text-sm sm:text-base text-[#20251F]/85 leading-relaxed border-t border-[#234D35]/5 animate-in fade-in duration-200">
-                    <p className="pt-4">{item.answer}</p>
+                <div
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}
+                  aria-hidden={!isOpen}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-6 pb-6 pt-0 text-sm sm:text-base text-[#20251F]/85 leading-relaxed border-t border-[#234D35]/5">
+                      <p className="pt-4">{item.answer}</p>
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             );
           })}
